@@ -5,6 +5,7 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 import { SkipToContent } from "@/components/layout/SkipToContent";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
+import { MistBackground } from "@/components/ui/MistBackground";
 import { siteConfig } from "@/lib/siteConfig";
 import { buildMetadata, buildPersonJsonLd } from "@/lib/metadata";
 import "./globals.css";
@@ -38,6 +39,7 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(personJsonLd) }}
         />
+        <MistBackground />
         <SkipToContent />
         <Header />
         <main id="main-content">{children}</main>
