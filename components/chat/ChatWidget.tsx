@@ -152,7 +152,9 @@ export function ChatWidget() {
         aria-expanded={isOpen}
         aria-controls="chat-panel"
         aria-label={isOpen ? "Close chat with Klaak, Audu's AI assistant" : "Chat with Klaak, Audu's AI assistant"}
-        className="fixed bottom-5 right-5 z-[60] inline-flex size-14 items-center justify-center rounded-full bg-teal text-ink shadow-lg shadow-black/30 transition-transform duration-200 hover:bg-teal-soft focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal active:scale-95 sm:bottom-6 sm:right-6"
+        className={`fixed bottom-5 right-5 z-[60] size-14 items-center justify-center rounded-full bg-teal text-ink shadow-lg shadow-black/30 transition-transform duration-200 hover:bg-teal-soft focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal active:scale-95 sm:bottom-6 sm:right-6 sm:inline-flex ${
+          isOpen ? "hidden" : "inline-flex"
+        }`}
       >
         {isOpen ? (
           <X className="size-6" aria-hidden="true" />
