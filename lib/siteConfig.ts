@@ -174,6 +174,8 @@ export const siteConfig: SiteConfig = {
       githubClicked: "github_clicked",
       videoStarted: "video_started",
       videoCompleted: "video_completed",
+      chatOpened: "chat_opened",
+      chatMessageSent: "chat_message_sent",
     },
   },
 };

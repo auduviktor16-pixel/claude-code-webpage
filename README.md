@@ -47,6 +47,7 @@ All are optional in the sense that the site builds and runs without any of them 
 | Variable | Purpose | If unset |
 |---|---|---|
 | `RESEND_API_KEY` | Sends contact form emails via [Resend](https://resend.com) | The API route returns a clear error asking the visitor to email you directly; the form never fakes a success. |
+| `ANTHROPIC_API_KEY` | Powers the AI chat widget (FAQ assistant) via the [Anthropic API](https://console.anthropic.com) | The widget still renders but replies with a "not configured" message pointing to the contact form. |
 | `NEXT_PUBLIC_CONTACT_EMAIL` | Recipient address, and the address shown in the footer/contact section | Defaults to `auduviktor16@gmail.com`. |
 | `NEXT_PUBLIC_SITE_URL` | Canonical URL, Open Graph/Twitter metadata, sitemap | Defaults to a placeholder (`https://auduvictor.com`). **Change this before launch.** |
 | `NEXT_PUBLIC_LINKEDIN_URL`, `NEXT_PUBLIC_X_URL`, `NEXT_PUBLIC_GITHUB_URL` | Footer social links | Each link is simply not rendered when its URL is unset — no dead `#` links. |
@@ -71,10 +72,10 @@ Just set the corresponding `NEXT_PUBLIC_*` env var — no component changes need
 
 ## Project structure
 
-- `app/` — routes, layout, metadata, the contact API route, sitemap/robots/OG image
+- `app/` — routes, layout, metadata, the contact and chat API routes, sitemap/robots/OG image
 - `components/sections/` — one component per landing page section
-- `components/{layout,ui,contact,social,work,icons}/` — shared building blocks
-- `lib/` — `siteConfig.ts` (single source of truth for all copy/links), validation schema, pure helpers (`links.ts`, `video.ts`, `scrollReveal.ts`, `rateLimit.ts`), metadata builders
+- `components/{layout,ui,contact,social,work,icons,chat}/` — shared building blocks
+- `lib/` — `siteConfig.ts` (single source of truth for all copy/links), validation schemas, pure helpers (`links.ts`, `video.ts`, `scrollReveal.ts`, `rateLimit.ts`), metadata builders, `chat/` (FAQ data + system prompt builder for the chat widget)
 - `hooks/` — `useScrollReveal`, `useActiveSection` (nav highlighting), `useMediaQuery`
 - `__tests__/` — Vitest unit tests
 - `e2e/` — Playwright E2E tests

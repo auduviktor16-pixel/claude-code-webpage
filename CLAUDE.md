@@ -71,6 +71,12 @@ When changing any of this logic, keep the resolution logic pure and in `lib/`, w
 
 `lib/validation/contactSchema.ts` (Zod) is imported by both `components/contact/ContactForm.tsx` (client-side, via `@hookform/resolvers/zod`) and `app/api/contact/route.ts` (server-side re-validation — never trust the client payload). Add new fields/rules there once; both sides pick it up automatically. The schema includes a hidden honeypot field (`company_website`) — the route treats a filled honeypot as spam and returns a fake success without sending mail.
 
+### The AI chat widget is a stateless streaming proxy, not a stored conversation
+
+`components/chat/ChatWidget.tsx` (rendered globally in `app/layout.tsx`, alongside `Header`/`Footer`) is a floating FAQ assistant. `app/api/chat/route.ts` re-validates the client-sent message history (`lib/validation/chatSchema.ts`), then calls the Anthropic Messages API directly via `@anthropic-ai/sdk` — no `claude-agent-sdk`/CLI subprocess, no tools, no server-side session storage. The full FAQ knowledge base (`lib/chat/faqs.json`, grouped by category via `lib/chat/systemPrompt.ts`'s `buildChatSystemPrompt`) is baked into the system prompt on every request and cached server-side (`cache_control: "ephemeral"`) since it's identical across requests. The response streams back as plain UTF-8 text (not SSE/JSON) — the client reads it with `response.body.getReader()` and appends chunks directly, which is why the route's error paths (`textResponse` helper) return plain strings too, not JSON, so the client's read loop doesn't need a separate error-shape branch.
+
+Chat uses its own rate-limit key (`chat:${ip}`, 20 req/60s via `lib/rateLimit.ts`'s parameterized `checkRateLimit`) rather than the contact form's default (5 req/60s) — a real conversation needs many more requests than a one-shot form submission, and the two features intentionally don't throttle each other despite sharing the same IP-keyed `Map`.
+
 ### Testing layout
 
 - `__tests__/` (Vitest + Testing Library) covers pure logic in `lib/`/`hooks/` and `ContactForm`'s conditional rendering states. `vitest.setup.ts` registers global `afterEach(cleanup)` — required because this project doesn't use Vitest's `globals: true`, so Testing Library's own auto-cleanup detection doesn't fire.
@@ -80,3 +86,13 @@ When changing any of this logic, keep the resolution logic pure and in `lib/`, w
 ## Environment variables
 
 See `.env.example` for the full list and `README.md` for the "what happens if this is unset" table — every var has documented graceful-degradation behavior, so don't assume a missing var is a bug.
+
+<!-- BEGIN:nextjs-agent-rules -->
+
+# This is NOT the Next.js you know
+
+This version has breaking changes — APIs, conventions, and file structure may all differ from your training data. Read the relevant guide in `node_modules/next/dist/docs/` (resolved from this file's directory; in monorepos the `next` package may not be visible from the repo root) before writing any code. Heed deprecation notices.
+
+This block is written and re-added by `next dev` — verify at `node_modules/next/dist/server/lib/generate-agent-files.js`. Removing it from a diff only re-creates the uncommitted change; committing it with your work keeps the tree clean.
+
+<!-- END:nextjs-agent-rules -->

@@ -6,6 +6,7 @@ import { SkipToContent } from "@/components/layout/SkipToContent";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { MistBackground } from "@/components/ui/MistBackground";
+import { ChatWidget } from "@/components/chat/ChatWidget";
 import { siteConfig } from "@/lib/siteConfig";
 import { buildMetadata, buildPersonJsonLd } from "@/lib/metadata";
 import "./globals.css";
@@ -44,6 +45,7 @@ export default function RootLayout({
         <Header />
         <main id="main-content">{children}</main>
         <Footer />
+        <ChatWidget />
         <Analytics />
         <SpeedInsights />
       </body>

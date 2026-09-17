@@ -19,12 +19,16 @@ export function isWithinRateLimit(
 
 const requestLog = new Map<string, number[]>();
 
-export function checkRateLimit(key: string): boolean {
+export function checkRateLimit(
+  key: string,
+  windowMs: number = WINDOW_MS,
+  maxRequests: number = MAX_REQUESTS_PER_WINDOW,
+): boolean {
   const now = Date.now();
   const timestamps = requestLog.get(key) ?? [];
-  const allowed = isWithinRateLimit(timestamps, now);
+  const allowed = isWithinRateLimit(timestamps, now, windowMs, maxRequests);
 
-  const recent = timestamps.filter((ts) => now - ts < WINDOW_MS);
+  const recent = timestamps.filter((ts) => now - ts < windowMs);
   recent.push(now);
   requestLog.set(key, recent);
 

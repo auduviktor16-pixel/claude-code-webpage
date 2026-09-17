@@ -8,4 +8,5 @@ import "server-only";
  */
 export const serverEnv = {
   resendApiKey: process.env.RESEND_API_KEY?.trim() || undefined,
+  anthropicApiKey: process.env.ANTHROPIC_API_KEY?.trim() || undefined,
 };

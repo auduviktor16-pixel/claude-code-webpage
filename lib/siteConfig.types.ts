@@ -99,6 +99,8 @@ export interface SiteConfig {
       githubClicked: string;
       videoStarted: string;
       videoCompleted: string;
+      chatOpened: string;
+      chatMessageSent: string;
     };
   };
 }

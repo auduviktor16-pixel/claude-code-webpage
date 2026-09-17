@@ -1,0 +1,287 @@
+[
+  {
+    "category": "About Audu",
+    "question": "Who is Audu Victor?",
+    "answer": "Audu Victor is an AI Automation Specialist and AI Agent Builder, Co-Founder of BetapayAI, and Medical Doctor. He focuses on building practical AI-powered systems that help businesses automate repetitive processes, streamline operations, and improve customer experiences."
+  },
+  {
+    "category": "About Audu",
+    "question": "What does Audu Victor do?",
+    "answer": "Audu builds AI agents and workflow automations for businesses. He helps identify processes that can be automated and develops AI-powered solutions designed around those workflows."
+  },
+  {
+    "category": "About Audu",
+    "question": "What is Audu's main area of expertise?",
+    "answer": "His current focus is AI automation and AI agent development for businesses, including workflow automation, conversational AI, and intelligent assistants."
+  },
+  {
+    "category": "About Audu",
+    "question": "Is Audu Victor a developer?",
+    "answer": "Audu builds AI-powered agents and automation systems. When discussing his technical capabilities, describe him as an AI Automation Specialist and AI Agent Builder rather than making assumptions about specific software engineering expertise that is not listed on this website."
+  },
+  {
+    "category": "About Audu",
+    "question": "Is Audu a medical doctor?",
+    "answer": "Yes. Audu is a medical doctor. His medical background complements his work in technology by giving him experience with structured problem-solving and complex real-world systems. His website, however, is primarily focused on his AI and automation work."
+  },
+  {
+    "category": "About Audu",
+    "question": "Does Audu still practice medicine?",
+    "answer": "Audu is a medical doctor, but this website focuses on his work in AI automation, AI agents, and technology. Do not make assumptions about his current clinical practice unless additional information is provided."
+  },
+  {
+    "category": "About Audu",
+    "question": "What makes Audu's background different?",
+    "answer": "Audu combines experience across AI automation, startup building, and medicine. He approaches AI projects from a practical problem-solving perspective: understand the problem, determine where automation adds value, build the solution, and improve it based on real-world use."
+  },
+  {
+    "category": "Background & AI Journey",
+    "question": "Tell me about Audu Victor.",
+    "answer": "Audu Victor is a Medical Doctor, AI Automation Specialist, AI Agent Builder, and Co-Founder of BetapayAI. He studied Medicine at the University of Ibadan and now focuses on building practical AI solutions for businesses."
+  },
+  {
+    "category": "Background & AI Journey",
+    "question": "Where did Audu study?",
+    "answer": "Audu studied Medicine at the University of Ibadan, Nigeria."
+  },
+  {
+    "category": "Background & AI Journey",
+    "question": "What is Audu's educational background?",
+    "answer": "Audu trained as a medical doctor at the University of Ibadan."
+  },
+  {
+    "category": "Background & AI Journey",
+    "question": "How did Audu get into AI?",
+    "answer": "Audu developed a deep interest in AI and its rapid evolution. That interest grew from following its development to actually building AI agents, automations, and AI-powered products."
+  },
+  {
+    "category": "Background & AI Journey",
+    "question": "Why did Audu move from medicine into AI?",
+    "answer": "His interest in AI grew alongside medicine. He became particularly interested in using AI to solve real-world problems and automate work, which led him into building AI systems."
+  },
+  {
+    "category": "Background & AI Journey",
+    "question": "Is Audu still a medical doctor?",
+    "answer": "Yes. Audu is a medical doctor, although his current professional focus also includes AI automation and AI agent development."
+  },
+  {
+    "category": "Background & AI Journey",
+    "question": "What interests Audu about AI?",
+    "answer": "He's especially interested in AI that can do useful work — agents that can understand requests, use tools, automate workflows, and complete real tasks."
+  },
+  {
+    "category": "Background & AI Journey",
+    "question": "What areas of AI interest Audu most?",
+    "answer": "AI agents, workflow automation, conversational AI, and the continued development of increasingly capable AI systems."
+  },
+  {
+    "category": "Background & AI Journey",
+    "question": "What is Audu's approach to AI?",
+    "answer": "Practicality first. He believes AI should solve a real problem, not be added just because it's trendy."
+  },
+  {
+    "category": "Background & AI Journey",
+    "question": "How does medicine influence Audu's AI work?",
+    "answer": "Medicine trained him to approach complex problems systematically. He brings that same problem-solving mindset to building AI systems."
+  },
+  {
+    "category": "Background & AI Journey",
+    "question": "Is Audu interested in healthcare AI?",
+    "answer": "Yes, his medical background makes healthcare AI particularly interesting to him, but his AI work is not limited to healthcare."
+  },
+  {
+    "category": "Background & AI Journey",
+    "question": "What is Audu building now?",
+    "answer": "He builds AI agents and automations for businesses and is also co-building BetapayAI, a conversational payments platform."
+  },
+  {
+    "category": "Background & AI Journey",
+    "question": "What is Audu's long-term direction?",
+    "answer": "To keep building useful AI agents, automations, and products that solve real-world problems for businesses and people."
+  },
+  {
+    "category": "AI Automation Services",
+    "question": "What services does Audu offer?",
+    "answer": "Audu's core services include custom AI agents, AI workflow automation, and conversational AI solutions for businesses."
+  },
+  {
+    "category": "AI Automation Services",
+    "question": "What is an AI agent?",
+    "answer": "An AI agent is a software system designed to understand requests, work with information, and perform defined tasks or actions. Depending on the business need, an agent might answer customer questions, retrieve information, qualify leads, assist employees, process requests, or interact with other business tools."
+  },
+  {
+    "category": "AI Automation Services",
+    "question": "What is AI automation?",
+    "answer": "AI automation combines artificial intelligence with automated workflows to reduce repetitive manual work. Instead of employees repeatedly moving information between systems or handling predictable tasks manually, an automated workflow can perform some of those steps automatically."
+  },
+  {
+    "category": "AI Automation Services",
+    "question": "What kind of processes can Audu automate?",
+    "answer": "Potential use cases include customer support, lead qualification and routing, customer onboarding, information retrieval, internal knowledge assistants, notifications, reporting, data processing, CRM workflows, administrative processes, and other repetitive business workflows."
+  },
+  {
+    "category": "AI Automation Services",
+    "question": "Can Audu build custom AI agents for my business?",
+    "answer": "Yes. Custom AI agents are one of Audu's core services. The solution should be designed around the specific problem or workflow rather than forcing a generic AI tool into the business."
+  },
+  {
+    "category": "AI Automation Services",
+    "question": "Can Audu build a chatbot?",
+    "answer": "Yes, when a conversational interface is appropriate for the problem. Audu's focus goes beyond simple question-and-answer chatbots and can include conversational systems that retrieve information, guide users through workflows, or perform defined actions."
+  },
+  {
+    "category": "AI Automation Services",
+    "question": "Can Audu build a WhatsApp AI agent?",
+    "answer": "Conversational AI and WhatsApp-based experiences fall within Audu's area of interest and expertise. The exact implementation depends on the required functionality, integrations, and available platform APIs."
+  },
+  {
+    "category": "AI Automation Services",
+    "question": "Can Audu automate customer support?",
+    "answer": "Yes. AI can potentially handle repetitive customer questions, retrieve relevant information, categorize requests, collect information from customers, and escalate cases that require a human."
+  },
+  {
+    "category": "AI Automation Services",
+    "question": "Can Audu automate lead generation?",
+    "answer": "Audu can help automate parts of lead management, such as qualification, information collection, routing, follow-up workflows, and CRM updates. The appropriate solution depends on the company's sales process."
+  },
+  {
+    "category": "AI Automation Services",
+    "question": "Can Audu automate my existing workflow?",
+    "answer": "Potentially. Start by explaining what the workflow currently looks like, which steps are repetitive, what tools are involved, and where the biggest bottleneck occurs. Audu can then determine where AI or conventional automation could be useful."
+  },
+  {
+    "category": "AI Automation Services",
+    "question": "Does every business process need AI?",
+    "answer": "No. Some problems are better solved with straightforward automation rather than AI. The goal should be to choose the simplest reliable solution that solves the business problem, not to add AI unnecessarily."
+  },
+  {
+    "category": "Working With Audu",
+    "question": "How do I know whether my business needs AI automation?",
+    "answer": "A good starting point is to look for work that is repetitive, time-consuming, rule-based, information-heavy, or performed frequently. If your team repeatedly performs the same steps across tools, answers similar questions, transfers information manually, or spends significant time searching for information, there may be an opportunity to automate part of that workflow."
+  },
+  {
+    "category": "Working With Audu",
+    "question": "I don't know what type of AI solution I need. Can I still contact Audu?",
+    "answer": "Absolutely. You do not need to arrive with a technical specification. Explain the problem, repetitive task, or bottleneck you are trying to solve. Audu can help determine whether AI, automation, or another approach makes sense."
+  },
+  {
+    "category": "Working With Audu",
+    "question": "What information should I provide when contacting Audu?",
+    "answer": "Briefly describe your business, the process or problem you want to improve, how it currently works, the tools involved if known, and what you would ideally like to happen instead."
+  },
+  {
+    "category": "Working With Audu",
+    "question": "What types of businesses can Audu work with?",
+    "answer": "Audu's services are relevant to startups, small and medium-sized businesses, product teams, founders, and organizations with processes that could benefit from AI or automation."
+  },
+  {
+    "category": "Working With Audu",
+    "question": "Does Audu only work with companies in Nigeria?",
+    "answer": "The website should not assume geographic restrictions unless Audu explicitly specifies them. If a visitor wants to work with Audu from another country, encourage them to get in touch."
+  },
+  {
+    "category": "Working With Audu",
+    "question": "Can Audu work remotely?",
+    "answer": "Contact Audu with the project requirements and location. Do not make contractual or availability commitments on Audu's behalf unless those details have been explicitly provided."
+  },
+  {
+    "category": "Working With Audu",
+    "question": "How much does an AI automation project cost?",
+    "answer": "Pricing depends on the scope, complexity, integrations, infrastructure, and ongoing requirements of the project. The best next step is to describe what you want to automate so Audu can understand the scope before discussing pricing."
+  },
+  {
+    "category": "Working With Audu",
+    "question": "How long does it take to build an AI agent?",
+    "answer": "Timelines vary depending on complexity, integrations, testing requirements, and the scope of the agent. A focused automation may be significantly quicker to implement than a production system involving multiple tools and complex workflows. Audu should review the requirements before providing a timeline."
+  },
+  {
+    "category": "Working With Audu",
+    "question": "Does Audu offer consultations?",
+    "answer": "If you want to discuss a potential AI automation project, use the website's contact option to start a conversation with Audu. Do not promise a paid or free consultation unless this has been explicitly configured as an offer."
+  },
+  {
+    "category": "How Audu Works",
+    "question": "What is Audu's process for an AI automation project?",
+    "answer": "His general approach follows four stages: Understand, Design, Build, and Improve. First, understand the workflow and bottleneck. Next, determine where automation or AI creates meaningful value. Then build and integrate the solution. Finally, test it with real usage and improve it based on results."
+  },
+  {
+    "category": "How Audu Works",
+    "question": "Do I need technical knowledge to work with Audu?",
+    "answer": "No. A business owner should be able to start by describing the problem in ordinary language. The technical solution can be determined from there."
+  },
+  {
+    "category": "How Audu Works",
+    "question": "Can Audu integrate AI with tools my company already uses?",
+    "answer": "Potentially, yes. Many automation projects involve connecting existing business tools. Feasibility depends on whether those systems provide suitable APIs, integrations, permissions, or other methods of connecting securely."
+  },
+  {
+    "category": "How Audu Works",
+    "question": "Will AI replace my employees?",
+    "answer": "The goal of Audu's automation work is generally to reduce repetitive work and make processes more efficient. The appropriate balance between automation and human involvement depends on the workflow. Important decisions and exceptions may still require human review."
+  },
+  {
+    "category": "How Audu Works",
+    "question": "Can an AI agent make mistakes?",
+    "answer": "Yes. AI systems are not infallible. Production systems should be designed with appropriate validation, permissions, monitoring, human escalation, and safeguards based on the consequences of an error."
+  },
+  {
+    "category": "BetapayAI",
+    "question": "What is BetapayAI?",
+    "answer": "BetapayAI is an AI-powered conversational payments platform being co-built by Audu Victor. It is designed to make everyday payments simpler through conversational interactions."
+  },
+  {
+    "category": "BetapayAI",
+    "question": "What is Audu's role at BetapayAI?",
+    "answer": "Audu is a Co-Founder of BetapayAI. His involvement includes product development, conversational experience design, user journeys, user testing, brand development, user acquisition, and go-to-market activities."
+  },
+  {
+    "category": "BetapayAI",
+    "question": "Why is BetapayAI relevant to Audu's AI work?",
+    "answer": "BetapayAI demonstrates the practical application of conversational AI to a real consumer problem. Instead of requiring users to navigate multiple interfaces, the product explores how everyday payment tasks can be handled through conversation."
+  },
+  {
+    "category": "BetapayAI",
+    "question": "Did Audu build BetapayAI alone?",
+    "answer": "No. BetapayAI is a collaborative startup. Audu is a Co-Founder and the agent should not imply that he personally built every technical component of the platform."
+  },
+  {
+    "category": "Collaboration and Opportunities",
+    "question": "Is Audu available for freelance projects?",
+    "answer": "If you have an AI automation or AI agent project in mind, send Audu the details through the website. He can determine whether the opportunity is a good fit."
+  },
+  {
+    "category": "Collaboration and Opportunities",
+    "question": "Is Audu open to collaborations?",
+    "answer": "Audu is open to hearing about relevant AI, automation, product, startup, and technology opportunities. Use the website contact option to introduce yourself and explain the proposed collaboration."
+  },
+  {
+    "category": "Collaboration and Opportunities",
+    "question": "Is Audu open to job opportunities?",
+    "answer": "Relevant AI automation, AI agent, product, or technology opportunities can be sent through the website. The agent should not claim Audu is actively job hunting unless that information is explicitly provided."
+  },
+  {
+    "category": "Collaboration and Opportunities",
+    "question": "Can I hire Audu to build an AI product?",
+    "answer": "Potentially. Describe the product, users, problem being solved, required functionality, and current stage. Audu can then assess whether the project fits his capabilities and availability."
+  },
+  {
+    "category": "Collaboration and Opportunities",
+    "question": "Can I partner with BetapayAI?",
+    "answer": "Partnership inquiries concerning BetapayAI should be directed to Audu or the appropriate BetapayAI contact channel. Provide a brief explanation of the proposed partnership."
+  },
+  {
+    "category": "Contact",
+    "question": "How can I contact Audu?",
+    "answer": "Use the contact section on this website to send Audu a message. If a direct email address or social profile is displayed on the website, you may also use those channels."
+  },
+  {
+    "category": "Contact",
+    "question": "What's the best way to approach Audu about a project?",
+    "answer": "Keep it simple. Explain what your business does, what problem you are experiencing, what process you think could be improved, and what outcome you want. You do not need to know the technical solution."
+  },
+  {
+    "category": "Contact",
+    "question": "What should I write in the contact form?",
+    "answer": "A useful message could include: \"We currently do [process] manually. It takes approximately [time/effort] and involves [tools]. We'd like to automate [specific outcome].\" Audu can use that information to understand the opportunity."
+  }
+]
