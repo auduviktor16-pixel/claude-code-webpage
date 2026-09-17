@@ -220,7 +220,7 @@ export function ChatWidget() {
                 disabled={isStreaming}
                 autoComplete="off"
                 aria-label="Message"
-                className="min-w-0 flex-1 rounded-full border border-border bg-ink-soft px-4 py-2.5 text-sm text-paper placeholder:text-paper-mute focus:border-teal focus:outline-none disabled:opacity-60"
+                className="min-w-0 flex-1 rounded-full border border-border bg-ink-soft px-4 py-2.5 text-base text-paper placeholder:text-paper-mute focus:border-teal focus:outline-none disabled:opacity-60 sm:text-sm"
               />
               <button
                 type="submit"
