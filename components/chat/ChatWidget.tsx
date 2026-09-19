@@ -27,6 +27,11 @@ const GREETING: DisplayMessage = {
 // server's own hard cap in lib/validation/chatSchema.ts.
 const MAX_HISTORY_MESSAGES = 20;
 
+// A proactive nudge near the FAB, not the chat itself opening — appears once
+// per visit after a delay, and auto-hides if ignored.
+const TEASER_SHOW_DELAY_MS = 6000;
+const TEASER_AUTO_HIDE_MS = 30000;
+
 function trimHistory(messages: DisplayMessage[]): DisplayMessage[] {
   const real = messages.filter((m) => !m.isGreeting);
   if (real.length <= MAX_HISTORY_MESSAGES) return real;
@@ -39,12 +44,14 @@ function trimHistory(messages: DisplayMessage[]): DisplayMessage[] {
 
 export function ChatWidget() {
   const [isOpen, setIsOpen] = useState(false);
+  const [showTeaser, setShowTeaser] = useState(false);
   const [messages, setMessages] = useState<DisplayMessage[]>([GREETING]);
   const [input, setInput] = useState("");
   const [isStreaming, setIsStreaming] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
   const hasTrackedOpen = useRef(false);
+  const teaserDismissedRef = useRef(false);
   const messagesEndRef = useRef<HTMLDivElement | null>(null);
   const inputRef = useRef<HTMLInputElement | null>(null);
   const triggerRef = useRef<HTMLButtonElement | null>(null);
@@ -75,12 +82,44 @@ export function ChatWidget() {
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth", block: "end" });
   }, [messages]);
 
+  useEffect(() => {
+    if (isOpen || teaserDismissedRef.current) return;
+    const timer = setTimeout(() => {
+      if (!teaserDismissedRef.current) setShowTeaser(true);
+    }, TEASER_SHOW_DELAY_MS);
+    return () => clearTimeout(timer);
+  }, [isOpen]);
+
+  useEffect(() => {
+    if (!showTeaser) return;
+    const timer = setTimeout(() => setShowTeaser(false), TEASER_AUTO_HIDE_MS);
+    return () => clearTimeout(timer);
+  }, [showTeaser]);
+
+  const trackOpenOnce = () => {
+    if (!hasTrackedOpen.current) {
+      hasTrackedOpen.current = true;
+      trackEvent(siteConfig.analytics.events.chatOpened);
+    }
+  };
+
+  const dismissTeaser = () => {
+    teaserDismissedRef.current = true;
+    setShowTeaser(false);
+  };
+
+  const openFromTeaser = () => {
+    dismissTeaser();
+    trackOpenOnce();
+    setIsOpen(true);
+  };
+
   const handleToggle = () => {
     setIsOpen((open) => {
       const next = !open;
-      if (next && !hasTrackedOpen.current) {
-        hasTrackedOpen.current = true;
-        trackEvent(siteConfig.analytics.events.chatOpened);
+      if (next) {
+        dismissTeaser();
+        trackOpenOnce();
       }
       return next;
     });
@@ -145,6 +184,25 @@ export function ChatWidget() {
 
   return (
     <>
+      {showTeaser && !isOpen && (
+        <div className="fixed bottom-24 right-5 z-[60] flex max-w-[min(260px,calc(100vw-2.5rem))] animate-fade-up items-start gap-1 rounded-2xl rounded-br-sm border border-border bg-surface-raised p-3 shadow-lg shadow-black/30 sm:bottom-28 sm:right-6">
+          <button type="button" onClick={openFromTeaser} className="flex-1 text-left">
+            <span className="text-sm font-medium text-paper">Klaak</span>
+            <p className="mt-0.5 text-sm text-paper-dim">
+              Hi! Got a question about Audu&rsquo;s work? Ask away.
+            </p>
+          </button>
+          <button
+            type="button"
+            onClick={dismissTeaser}
+            aria-label="Dismiss"
+            className="shrink-0 rounded-full p-1 text-paper-mute transition-colors hover:bg-surface hover:text-paper"
+          >
+            <X className="size-3.5" aria-hidden="true" />
+          </button>
+        </div>
+      )}
+
       <button
         ref={triggerRef}
         type="button"
