@@ -30,7 +30,7 @@ const MAX_HISTORY_MESSAGES = 20;
 // A proactive nudge near the FAB, not the chat itself opening — appears once
 // per visit after a delay, and auto-hides if ignored.
 const TEASER_SHOW_DELAY_MS = 6000;
-const TEASER_AUTO_HIDE_MS = 10000;
+const TEASER_AUTO_HIDE_MS = 20000;
 
 function trimHistory(messages: DisplayMessage[]): DisplayMessage[] {
   const real = messages.filter((m) => !m.isGreeting);
